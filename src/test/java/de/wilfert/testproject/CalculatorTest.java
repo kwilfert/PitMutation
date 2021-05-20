@@ -28,7 +28,7 @@ class CalculatorTest {
 
     @Test
     void mult() {
-        Assertions.assertEquals(calc.mult(5, 5), 25);
+        Assertions.assertEquals(calc.mult(2, 2), 4);
     }
 
     @Test
