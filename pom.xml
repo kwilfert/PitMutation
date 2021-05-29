@@ -47,6 +47,16 @@
                 </dependencies>
 
                 <configuration>
+                    <!--Put configuration here, most options shown from https://pitest.org/quickstart/maven/ -->
+                    <skip>false</skip>
+                    <reportsDirectory>${project.build.directory}/pit-custom-output-dir</reportsDirectory>
+                    <sourceDataFormats>
+                        <sourceDataFormat>HTML</sourceDataFormat>
+                    </sourceDataFormats>
+                    <siteReportName>PIT Mutation Test Demonstration</siteReportName>
+                    <siteReportDescription>
+                        Multiple Test Classes for the Software Testing course, 5th Semester
+                    </siteReportDescription>
                     <targetClasses>
                         <param>de.wilfert.testproject.*</param>
                     </targetClasses>

@@ -46,11 +46,11 @@ public class CoffeeMachine {
     }
 
     //variable sensor data
-    private float currentWater;
-    private int currentBeans;
+    private float currentWater = 1000;
+    private int currentBeans = 800;
 
-    private boolean turnedOn;
-    private boolean cupPositioned;
+    private boolean turnedOn = false;
+    private boolean cupPositioned = false;
 
     public void flipSwitch() {
         turnedOn = !turnedOn;
@@ -64,8 +64,7 @@ public class CoffeeMachine {
             currentWater -= waterPerCup;
             currentBeans -= beansPerCup;
             return true;
-        }
-        else return false;
+        } else return false;
     }
 
     /**

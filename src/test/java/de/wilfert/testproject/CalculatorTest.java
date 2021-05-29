@@ -18,7 +18,7 @@ class CalculatorTest {
 
     @Test
     void add() {
-        Assertions.assertEquals(calc.add(0, 10), 10);
+        Assertions.assertEquals(calc.add(1, 1), 2);
     }
 
     @Test
@@ -34,6 +34,11 @@ class CalculatorTest {
     @Test
     void div() {
         assertThrows(IllegalArgumentException.class, () -> calc.div(10, 0));
-        Assertions.assertEquals(2, calc.div(10,5));
+        Assertions.assertEquals(2, calc.div(10, 5));
+    }
+
+    @Test
+    void greatestCommonDenominator() {
+        Assertions.assertEquals(calc.greatestCommonDenominator(97207, 77), 11);
     }
 }

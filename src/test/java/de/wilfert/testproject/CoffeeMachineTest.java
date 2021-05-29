@@ -31,8 +31,14 @@ class CoffeeMachineTest {
 
     @Test
     void positionCup() {
-        assertThrows(Exception.class, () -> {
+        try {
             machine.positionCup();
+        } catch (Exception e) {
+            //shouldn't happen yet
+            //e.printStackTrace();
+        }
+        assertThrows(Exception.class, () -> {
+            //now it shall throw an exception
             machine.positionCup();
         });
     }
@@ -44,7 +50,7 @@ class CoffeeMachineTest {
             machine.positionCup();
             assertTrue(machine.removeCup());
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
         }
     }
 

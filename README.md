@@ -12,12 +12,13 @@ Killed mutations show, that your tests are written specifically for your use cas
 
 Survived mutations, however, show that your tests are not written well enough to prevent altered versions of your code from running.
 
-## Testing:
-
 ## How to use mutation testing?
-Open the terminal in your IDE (preferrably IntelliJ IDEA) and enter the following command:
+Open the terminal in your IDE (preferably IntelliJ IDEA) and enter the following command:
 mvn -DwithHistory org.pitest:pitest-maven:mutationCoverage
 
 The results can be found in under /target/pit-reports/{time}/index.html
 
-Just open it with a browser and the test report can be evaluated
+Just open it with a browser, and the test report can be evaluated. Alternatively, results can be viewed in the terminal
+
+A good testing result features high code coverage and high mutation coverage.
+Try to adjust the unit tests in a way that maximizes both.
