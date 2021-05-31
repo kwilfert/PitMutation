@@ -1,11 +1,12 @@
-package de.wilfert.testproject;
-
+package de.wilfert.solutionproject;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import java.nio.channels.CancelledKeyException;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
 
@@ -30,20 +31,20 @@ class CalculatorTest {
 
     @Test
     void mult() {
-        calc.add(2,2);
-        Assertions.assertEquals(calc.displayed, 4);
+        calc.add(3,2);
+        Assertions.assertEquals(calc.displayed, 5);
     }
 
     @Test
     void div() {
-        assertThrows(IllegalArgumentException.class, () -> calc.div(10, calc.displayed));
+        assertThrows(IllegalArgumentException.class, () -> calc.div(10, 0));
         calc.div(10, 5);
         Assertions.assertEquals(calc.displayed, 2);
     }
 
     @Test
     void greatestCommonDenominator() {
-        calc.greatestCommonDenominator(2,2);
-        Assertions.assertEquals(calc.displayed, 2);
+        calc.greatestCommonDenominator(100,10);
+        Assertions.assertEquals(calc.displayed, 10);
     }
 }

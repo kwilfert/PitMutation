@@ -1,8 +1,8 @@
-package de.wilfert.testproject;
+package de.wilfert.solutionproject;
 
 public class NumberComparator {
-    public static boolean BiggerOrEqual(int a, int b){
-        if(a >= b ){
+    public static boolean BiggerThan(int a, int b){
+        if(a > b ){
             return true;
         }
         else{

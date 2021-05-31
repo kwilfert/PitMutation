@@ -58,13 +58,13 @@ class CoffeeMachineTest {
     void fillWater() {
         machine.setCurrentWater(0);
         machine.fillWater();
-        assertTrue(machine.getCurrentWater() >= machine.maxWater);
+        assertTrue(machine.getCurrentWater() >= machine.maxBeans);
     }
 
     @Test
     void fillBeans() {
         machine.setCurrentBeans(0);
-        machine.fillBeans();
-        assertTrue(machine.getCurrentBeans() >= machine.maxBeans);
+        machine.fillWater();
+        assertTrue(machine.getCurrentWater() >= machine.maxBeans);
     }
 }

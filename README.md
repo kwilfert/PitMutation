@@ -13,10 +13,14 @@ Killed mutations show, that your tests are written specifically for your use cas
 Survived mutations, however, show that your tests are not written well enough to prevent altered versions of your code from running.
 
 ## How to use mutation testing?
+In order to perform pit mutation tests, JUnit tests must run beforehand.
+Make sure, the JUnit tests are run for all classes in the project by setting the JUnit run configuration to "all in package".
+
 Open the terminal in your IDE (preferably IntelliJ IDEA) and enter the following command:
+
 mvn -DwithHistory org.pitest:pitest-maven:mutationCoverage
 
-The results can be found in under /target/pit-reports/{time}/index.html
+The results can be found in under /target/pit-reports/{timestamp}/index.html
 
 Just open it with a browser, and the test report can be evaluated. Alternatively, results can be viewed in the terminal
 

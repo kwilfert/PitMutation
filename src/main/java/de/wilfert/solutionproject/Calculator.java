@@ -1,4 +1,4 @@
-package de.wilfert.testproject;
+package de.wilfert.solutionproject;
 
 public class Calculator {
     float displayed = 0;
@@ -14,22 +14,22 @@ public class Calculator {
     }
 
     public void add(float number1, float number2) {
-        displayed = number1 + number2;
+        setDisplayed(number1 + number2);
     }
 
     public void sub(float number1, float number2) {
-        displayed = number1 - number2;
+        setDisplayed(number1 - number2);
     }
 
     public void mult(float number1, float number2) {
-        displayed = number1 * number2;
+        setDisplayed(number1 * number2);
     }
 
     public void div(float number1, float number2) {
         if (number2 == 0) {
             throw new IllegalArgumentException("Argument 'divisor' is 0");
         }
-        displayed = number1 / number2;
+        setDisplayed(displayed = number1 / number2);
     }
 
     public void setDisplayed(float output) {

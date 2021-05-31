@@ -59,6 +59,7 @@
                     </siteReportDescription>
                     <targetClasses>
                         <param>de.wilfert.testproject.*</param>
+                        <param>de.wilfert.solutionproject.*</param>
                     </targetClasses>
                 </configuration>
             </plugin>

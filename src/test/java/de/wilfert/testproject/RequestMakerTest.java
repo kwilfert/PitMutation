@@ -1,7 +1,5 @@
 package de.wilfert.testproject;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -16,7 +14,7 @@ class RequestMakerTest {
     @Test
     void makeRequestLong() {
         // set headers
-        HashMap<String, String> headers = new HashMap<String, String>();
+        HashMap<String, String> headers = new HashMap<>();
         try {
             HttpResponse<String> resp = RequestMaker.makeRequest("https://v2.jokeapi.dev/joke/Programming?format=json", RequestMaker.RequestMethod.GET, "", headers);
             if (resp.statusCode() == 200)

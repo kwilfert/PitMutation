@@ -9,8 +9,8 @@ class NumberComparatorTest {
     @Test
     void biggerThan() {
         //100% code coverage?
-        NumberComparator.BiggerThan(9, 10);
-        NumberComparator.BiggerThan(10, 10);
-        NumberComparator.BiggerThan(11, 10);
+        NumberComparator.BiggerOrEqual(9, 10);
+        NumberComparator.BiggerOrEqual(10, 10);
+        NumberComparator.BiggerOrEqual(11, 10);
     }
 }
