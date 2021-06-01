@@ -16,7 +16,7 @@ Survived mutations, however, show that your tests are not written well enough to
 In order to perform pit mutation tests, JUnit tests must run beforehand.
 Make sure, the JUnit tests are run for all classes in the project by setting the JUnit run configuration to "all in package".
 
-Open the terminal in your IDE (preferably IntelliJ IDEA) and enter the following command:
+Open the terminal in your IDE (preferably IntelliJ IDEA) and enter the following command (-DwithHistory added for faster tests):
 
 mvn -DwithHistory org.pitest:pitest-maven:mutationCoverage
 

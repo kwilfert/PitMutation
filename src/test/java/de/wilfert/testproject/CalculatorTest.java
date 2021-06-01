@@ -46,4 +46,13 @@ class CalculatorTest {
         calc.greatestCommonDenominator(2,2);
         Assertions.assertEquals(calc.displayed, 2);
     }
+
+    @Test
+    public void testPositive(){
+        Assertions.assertEquals(true, calc.isPositive(10));
+    }
+
+
+
+
 }

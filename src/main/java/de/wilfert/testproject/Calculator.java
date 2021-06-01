@@ -35,4 +35,14 @@ public class Calculator {
     public void setDisplayed(float output) {
         displayed = output;
     }
+
+    public boolean isPositive(int number) {
+
+        boolean result = false;
+        if (number >= 0) {
+            result = true;
+        }
+        return result;
+
+    }
 }

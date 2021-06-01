@@ -17,16 +17,16 @@ public class CoffeeMachine {
         return currentWater;
     }
 
-    public void setCurrentWater(float currentWater) {
-        this.currentWater = currentWater;
+    public void setCurrentWater(float newWater) {
+        this.currentWater = Math.max(maxWater, newWater);
     }
 
     public int getCurrentBeans() {
         return currentBeans;
     }
 
-    public void setCurrentBeans(int currentBeans) {
-        this.currentBeans = currentBeans;
+    public void setCurrentBeans(int newBeans) {
+        this.currentBeans = Math.min(maxBeans, newBeans);
     }
 
     public boolean isTurnedOn() {

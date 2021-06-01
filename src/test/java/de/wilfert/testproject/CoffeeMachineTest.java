@@ -50,7 +50,7 @@ class CoffeeMachineTest {
             machine.positionCup();
             assertTrue(machine.removeCup());
         } catch (Exception e) {
-            //e.printStackTrace();
+            e.printStackTrace();
         }
     }
 
