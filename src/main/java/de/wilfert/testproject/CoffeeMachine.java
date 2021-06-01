@@ -7,7 +7,7 @@ package de.wilfert.testproject;
 public class CoffeeMachine {
 
     //Hardware limits of the machine
-    public final float beansPerCup = 100;
+    public final int beansPerCup = 100;
     public final float waterPerCup = 200;
 
     public final float maxWater = 1000;
