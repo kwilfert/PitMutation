@@ -25,34 +25,32 @@ class CalculatorTest {
     @Test
     void sub() {
         calc.sub(5, -5);
-        Assertions.assertEquals(calc.displayed,10);
+        Assertions.assertEquals(calc.displayed, 10);
     }
 
     @Test
     void mult() {
-        calc.add(2,2);
+        calc.add(2, 2);
         Assertions.assertEquals(calc.displayed, 4);
     }
 
     @Test
     void div() {
-        assertThrows(IllegalArgumentException.class, () -> calc.div(10, calc.displayed));
         calc.div(10, 5);
         Assertions.assertEquals(calc.displayed, 2);
+        assertThrows(IllegalArgumentException.class, () -> calc.div(10, calc.displayed));
     }
 
     @Test
     void greatestCommonDenominator() {
-        calc.greatestCommonDenominator(2,2);
+        calc.greatestCommonDenominator(2, 2);
         Assertions.assertEquals(calc.displayed, 2);
     }
 
     @Test
-    public void testPositive(){
+    public void testPositive() {
         Assertions.assertEquals(true, calc.isPositive(10));
     }
-
-
 
 
 }

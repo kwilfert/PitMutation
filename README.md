@@ -23,7 +23,7 @@ Open the terminal in your IDE (preferably IntelliJ IDEA) and enter the following
 mvn -DwithHistory -DtimestampedReports=false org.pitest:pitest-maven:mutationCoverage
 
 
-The results can be found in under /target/pit-reports/{timestamp}/index.html
+The results can be found in under /target/pit-reports/pit-custom-output-dir/index.html
 
 Just open it with a browser, and the test report can be evaluated. Alternatively, results can be viewed in the terminal
 

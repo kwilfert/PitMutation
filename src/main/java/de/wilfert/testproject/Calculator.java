@@ -13,6 +13,7 @@ public class Calculator {
         displayed = a;
     }
 
+
     public void add(float number1, float number2) {
         displayed = number1 + number2;
     }
@@ -37,7 +38,6 @@ public class Calculator {
     }
 
     public boolean isPositive(int number) {
-
         boolean result = false;
         if (number >= 0) {
             result = true;
