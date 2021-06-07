@@ -27,5 +27,7 @@ The results can be found in under /target/pit-reports/pit-custom-output-dir/inde
 
 Just open it with a browser, and the test report can be evaluated. Alternatively, results can be viewed in the terminal
 
+In some cases, 100% mutation coverage cannot be reached due to equivalent mutations.
+
 A good testing result features high code coverage and high mutation coverage.
 Try to adjust the unit tests in a way that maximizes both.
