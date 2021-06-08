@@ -23,13 +23,13 @@ public class LinkedList {
         }
     }
 
-    public int sum() {
-        return root != null ? root.sum() : 0;
-    }
-
     //return Integer.MIN_VALUE if no element found
     public int findBiggest() {
         return root != null ? root.findBiggest(Integer.MIN_VALUE) : Integer.MIN_VALUE;
+    }
+
+    public int sum() {
+        return root != null ? root.sum() : 0;
     }
 
     @Override

@@ -11,7 +11,7 @@ public class Calculator {
             } else {
                 b -= a;
             }
-        displayed = a;
+        setDisplayed(a);
     }
 
     public void add(float number1, float number2) {

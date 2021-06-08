@@ -35,7 +35,7 @@ class CoffeeMachineTest {
             machine.positionCup();
         } catch (Exception e) {
             //shouldn't happen yet
-            //e.printStackTrace();
+            e.printStackTrace();
         }
         assertThrows(Exception.class, () -> {
             //now it shall throw an exception
