@@ -15,8 +15,8 @@ class NumberComparatorTest {
         NumberComparator nc = new NumberComparator();
 
         //normal assertions covering every possible case
-        assertFalse(NumberComparator.BiggerOrEqual(10, 10));
         assertFalse(NumberComparator.BiggerOrEqual(9, 10));
+        assertTrue(NumberComparator.BiggerOrEqual(10, 10));
         assertTrue(NumberComparator.BiggerOrEqual(11, 10));
     }
 }

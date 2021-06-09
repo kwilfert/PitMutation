@@ -36,9 +36,9 @@ class CalculatorTest {
 
     @Test
     void div() {
+        assertThrows(IllegalArgumentException.class, () -> calc.div(10, calc.displayed));
         calc.div(10, 5);
         Assertions.assertEquals(calc.displayed, 2);
-        assertThrows(IllegalArgumentException.class, () -> calc.div(10, calc.displayed));
     }
 
     @Test

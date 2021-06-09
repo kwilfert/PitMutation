@@ -59,9 +59,6 @@ class LinkedListTest {
 
     @Test
     void testToString() {
-        String result = "";
-        for (int num : nums) {
-        }
         assertEquals(ll.toString(), "->[55]->[73]->[12]->[0]");
     }
 }

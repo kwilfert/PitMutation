@@ -4,7 +4,7 @@
 
 Class:
 
-- changed explicit return true/false to one-liner Test:
+- changed explicit return true/false to one-liner Test
 
 Tests:
 
